@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.6rem;
+  color: #d1d5db;
+  background-color: #18181b;
+}
+.container {
+  width: 40rem;
+  height: fit-content;
+  margin-inline: auto auto;
+  border: 0.1rem solid black;
+  margin-top: 15rem;
+  background-color: #3f3f46;
+}
+.user-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+.user-input label {
+  font-size: 2.4rem;
+  text-align: center;
+}
+.user-input label .zeros {
+  opacity: 0.2;
+}
+.user-input label #status {
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: red;
+}
+.user-input input {
+  outline: none;
+  border: 0.2rem solid #003b00;
+  background-color: #008f11;
+  color: #00ff41;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+}
+.user-input input::placeholder {
+  color: #00ff41;
+}
+.user-input .btns {
+  display: flex;
+  gap: 2rem;
+}
+.user-input .btn {
+  width: 9rem;
+  padding: 0.6rem;
+  font-family: 'Space Mono', monospace;
+  color: #00ff41;
+  background-color: #008f11;
+  border: 0.1rem solid #003b00;
+}
+.btn:hover {
+  box-shadow: 0px 0px 2px #003b00, 0px 0px 4px #008f11, 0px 0px 6px #00ff41;
+}
+#res {
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 1rem;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer cite {
+  font-size: 1.4rem;
+}
+footer p {
+  margin-bottom: 2rem;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.social-links a {
+  text-decoration: none;
+}
+.social-links a svg path {
+  stroke: #008f11;
+}
+@media (max-width: 330px) {
+  .container {
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 410px) {
+  .container {
+    width: 35rem;
+  }
+}
+@media (max-width: 370px) {
+  .container {
+    width: 32rem;
+  }
+}
+@media (max-width: 330px) {
+  .container {
+    width: 30rem;
+  }
+  .user-input label {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 310px) {
+  .container {
+    width: 28rem;
+  }
+  .user-input label {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 292px) {
+  .container {
+    width: 25rem;
+  }
+  .user-input label {
+    font-size: 1.8rem;
+  }
+}
